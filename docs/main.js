@@ -173,7 +173,7 @@ class MyProfileDetailsLayoutComponent {
         let userInfo = {
             "userName": "Grishk",
             "userMail": "griishkaim@gmail.com",
-            "profilePic": "../../../../assets/images/profile-pic.jpg"
+            "profilePic": "src\assets\images\profile-pic.jpg"
         };
         this.userDetails.push(userInfo);
         console.log(this.userMenuItems);
@@ -186,7 +186,7 @@ class MyProfileDetailsLayoutComponent {
     }
 }
 MyProfileDetailsLayoutComponent.ɵfac = function MyProfileDetailsLayoutComponent_Factory(t) { return new (t || MyProfileDetailsLayoutComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"])); };
-MyProfileDetailsLayoutComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: MyProfileDetailsLayoutComponent, selectors: [["app-my-profile-details-layout"]], decls: 9, vars: 2, consts: [[1, "user-selected-menu"], [1, "selected-menu-path"], [1, "profile-content-wrapper"], [1, "user-sidebar"], ["class", "user-details-wrapper", 4, "ngFor", "ngForOf"], ["class", "sidebar-items", 4, "ngFor", "ngForOf"], [1, "menu-content"], [1, "user-details-wrapper"], [1, "user-img", 3, "src"], [1, "user-info"], [1, "user-name"], [1, "user-email"], [1, "sidebar-items"], [1, "menu-items-wrapper", 3, "click"], [1, "menu-item1", "item"], [1, "menu-header"], [1, "submenu"], [1, "menu-link", 3, "routerLink"], [1, "menu-arrow"], [1, "fa", "fa-chevron-right"], ["id", "line"]], template: function MyProfileDetailsLayoutComponent_Template(rf, ctx) { if (rf & 1) {
+MyProfileDetailsLayoutComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: MyProfileDetailsLayoutComponent, selectors: [["app-my-profile-details-layout"]], decls: 9, vars: 2, consts: [[1, "user-selected-menu"], [1, "selected-menu-path"], [1, "profile-content-wrapper"], [1, "user-sidebar"], ["class", "user-details-wrapper", 4, "ngFor", "ngForOf"], ["class", "sidebar-items", 4, "ngFor", "ngForOf"], [1, "menu-content"], [1, "user-details-wrapper"], ["alt", "https://i.pinimg.com/736x/9c/61/9e/9c619efe10c5167d2d6471aed43a864f.jpg", 1, "user-img", 3, "src"], [1, "user-info"], [1, "user-name"], [1, "user-email"], [1, "sidebar-items"], [1, "menu-items-wrapper", 3, "click"], [1, "menu-item1", "item"], [1, "menu-header"], [1, "submenu"], [1, "menu-link", 3, "routerLink"], [1, "menu-arrow"], [1, "fa", "fa-chevron-right"], ["id", "line"]], template: function MyProfileDetailsLayoutComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "p", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Home / My Profile");
@@ -903,19 +903,19 @@ class HomeComponent {
         this.testimonialDetails = [
             {
                 "name": "Jose",
-                "image": "../../../../assets/images/testimonial-1.jpg",
+                "image": "src/assets/images/testimonial-1.jpg",
                 "review": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod magni voluptatibus cupiditate Ipsum deleniti aliquid, voluptas, iure ab aut pariatur exercitationem doloribus molestias aspernatur at. Animi enim repellat ut maxime.",
                 "rating": 5
             },
             {
                 "name": "Aaron",
-                "image": "../../../../assets/images/testimonial-2.jpg",
+                "image": "src/assets/images/testimonial-2.jpg",
                 "review": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod magni voluptatibus cupiditate Ipsum deleniti aliquid, voluptas, iure ab aut pariatur exercitationem doloribus molestias aspernatur at. Animi enim repellat ut maxime.",
                 "rating": 4
             },
             {
                 "name": "Alex",
-                "image": "../../../../assets/images/testimonial-3.jpg",
+                "image": "src/assets/images/testimonial-3.jpg",
                 "review": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod magni voluptatibus cupiditate Ipsum deleniti aliquid, voluptas, iure ab aut pariatur exercitationem doloribus molestias aspernatur at. Animi enim repellat ut maxime.",
                 "rating": 3
             },
@@ -929,7 +929,7 @@ class HomeComponent {
             // },
             {
                 "name": "Printed Denim Shirts",
-                "image": "../../../../assets/images/collection-2.jpg",
+                "image": ".src\assets\images\collection-2.jpg",
                 "price": "1,500.00"
             },
             // {
@@ -939,7 +939,7 @@ class HomeComponent {
             // },
             {
                 "name": "Printed Denim Shirts",
-                "image": "../../../../assets/images/collection-2.jpg",
+                "image": "src\assets\images\collection-1.jpg",
                 "price": "1,500.00"
             },
         ];
@@ -947,7 +947,7 @@ class HomeComponent {
     }
 }
 HomeComponent.ɵfac = function HomeComponent_Factory(t) { return new (t || HomeComponent)(); };
-HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HomeComponent, selectors: [["app-home"]], decls: 62, vars: 2, consts: [["name", "viewport", "content", "width=device-width, initial-scale=1.0"], [1, "header"], [1, "banner"], [1, "banner-paragraph1"], [1, "text-red"], [1, "banner-paragraph2"], [1, "banner-button"], [1, "display-dressitems"], [1, "dress-collection"], [1, "images-1"], [1, "collection-paragraph1"], [1, "collection-paragraph2"], [1, "images-2"], [1, "images-3"], [1, "collections"], [1, "section-name"], [1, "latest-collections"], ["class", "collection-card", 4, "ngFor", "ngForOf"], [1, "testimonials-section"], [1, "testimonials-content"], [1, "testimonial-card-wrapper"], ["class", "testimonial-card", 4, "ngFor", "ngForOf"], [1, "newsletter-section"], [1, "newsletter"], [1, "newsletter-wrapper"], [1, "newsletter-heading"], [1, "news-header"], [1, "newletter-paragraph"], [1, "news-paragraph"], [1, "newsletter-subscribe"], [1, "newsletter-content"], ["type", "text", "placeholder", "E-mail", 1, "email-box"], [1, "subscribe-button"], [1, "locateus-btn"], [1, "fa", "fa-map-marker", "location-icon"], [1, "collection-card"], [1, "image-1", 3, "src"], [1, "collection-detail"], [1, "collection-name"], [1, "collection-price", "text-red"], [1, "testimonial-card"], [1, "testimonial-image-wrapper"], [1, "testimonial-image", 3, "src"], [1, "testimonial-info"], [1, "testimonial-content"], [1, "testimonial-name", "testimonial-row"], [1, "testimonial-rating", "testimonial-row"], [1, "fa", "fa-star", "star-gold"], [1, "testimonial-paragraph"]], template: function HomeComponent_Template(rf, ctx) { if (rf & 1) {
+HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HomeComponent, selectors: [["app-home"]], decls: 62, vars: 2, consts: [["name", "viewport", "content", "width=device-width, initial-scale=1.0"], [1, "header"], [1, "banner"], [1, "banner-paragraph1"], [1, "text-red"], [1, "banner-paragraph2"], [1, "banner-button"], [1, "display-dressitems"], [1, "dress-collection"], [1, "images-1"], [1, "collection-paragraph1"], [1, "collection-paragraph2"], [1, "images-2"], [1, "images-3"], [1, "collections"], [1, "section-name"], [1, "latest-collections"], ["class", "collection-card", 4, "ngFor", "ngForOf"], [1, "testimonials-section"], [1, "testimonials-content"], [1, "testimonial-card-wrapper"], ["class", "testimonial-card", 4, "ngFor", "ngForOf"], [1, "newsletter-section"], [1, "newsletter"], [1, "newsletter-wrapper"], [1, "newsletter-heading"], [1, "news-header"], [1, "newletter-paragraph"], [1, "news-paragraph"], [1, "newsletter-subscribe"], [1, "newsletter-content"], ["type", "text", "placeholder", "E-mail", 1, "email-box"], [1, "subscribe-button"], [1, "locateus-btn"], [1, "fa", "fa-map-marker", "location-icon"], [1, "collection-card"], ["alt", "https://images.pexels.com/photos/52518/jeans-pants-blue-shop-52518.jpeg", 1, "image-1", 3, "src"], [1, "collection-detail"], [1, "collection-name"], [1, "collection-price", "text-red"], [1, "testimonial-card"], [1, "testimonial-image-wrapper"], ["alt", "https://i.pinimg.com/736x/9c/61/9e/9c619efe10c5167d2d6471aed43a864f.jpg", 1, "testimonial-image", 3, "src"], [1, "testimonial-info"], [1, "testimonial-content"], [1, "testimonial-name", "testimonial-row"], [1, "testimonial-rating", "testimonial-row"], [1, "fa", "fa-star", "star-gold"], [1, "testimonial-paragraph"]], template: function HomeComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "meta", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "header", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
