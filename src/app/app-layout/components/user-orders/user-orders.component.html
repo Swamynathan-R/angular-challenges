@@ -1,0 +1,115 @@
+<div class="container">
+
+    <div class="section-heading">
+        <h1 class="header">My Orders</h1>
+    </div>
+
+    <div class="order-card" *ngFor="let order of orderDetails">
+        <div class="order-card-wrapper">
+            <div class="order-card-details">
+                <div class="order-image">
+                    <img [src]="order.orderItemImg" class="image-item">
+                </div>
+                <div class="order-paragraph">
+                    <span class="order-id">{{order.orderId}}</span>
+                    <h3 class="order-item">{{order.orderedItemName}}</h3>
+                    <span class="order-delivery">{{order.deliveredDate}}</span>
+                </div>
+            </div>
+            <div class="payment-details">
+                <span class="payment-method">{{order.paymentMethod}}</span>
+                <h3 class="order-price">Rs.{{order.orderTotalAmount}}</h3>
+                <span class="arrow-icon"><i class="fa fa-chevron-down down-arrow"></i></span>
+            </div>
+        </div>
+        
+        <button class="pending-btn" *ngIf="order.isPending;else showDeliveredBtn">{{order.orderStatus}}</button>
+        
+        <ng-template #showDeliveredBtn>
+            <button class="delivered-btn">{{order.orderStatus}}</button>
+        </ng-template>
+        <hr class="card-end">
+
+        <!-- <div class="order-card-wrapper">
+            <div class="order-card-details">
+                <div class="order-image">
+                    <img src="../../../../assets/images/486287.jpg" class="image-item">
+                </div>
+                <div class="order-paragraph">
+                    <span class="order-id">Order #12345678</span>
+                    <h3 class="order-item">Madeup White Cotton Blend Checkered Slim Fit Shirt</h3>
+                    <span class="order-delivery">Express Develivery by Sat,Aug 30</span>
+                </div>
+            </div>
+            <div class="payment-details">
+                <span class="payment-method">Credit Card Payment</span>
+                <h3 class="order-price">Rs 1,899</h3>
+                <span class="arrow-icon">arrow-down</span>
+            </div>
+        </div>
+        <button class="pending-btn">Pending</button>
+        <hr class="card-end">
+    
+    
+        <div class="order-card-wrapper">
+            <div class="order-card-details">
+                <div class="order-image">
+                    <img src="../../../../assets/images/486287.jpg" class="image-item">
+                </div>
+                <div class="order-paragraph">
+                    <span class="order-id">Order #12345678</span>
+                    <h3 class="order-item">Madeup White Cotton Blend Checkered Slim Fit Shirt</h3>
+                    <span class="order-delivery">Express Develivery by Sat,Aug 30</span>
+                </div>
+            </div>
+            <div class="payment-details">
+                <span class="payment-method">Credit Card Payment</span>
+                <h3 class="order-price">Rs 1,899</h3>
+                <span class="arrow-icon">arrow-down</span>
+            </div>
+        </div>
+        <button class="delivered-btn">Delivered</button>
+        <hr class="card-end">
+    
+        <div class="order-card-wrapper">
+            <div class="order-card-details">
+                <div class="order-image">
+                    <img src="../../../../assets/images/486287.jpg" class="image-item">
+                </div>
+                <div class="order-paragraph">
+                    <span class="order-id">Order #12345678</span>
+                    <h3 class="order-item">Madeup White Cotton Blend Checkered Slim Fit Shirt</h3>
+                    <span class="order-delivery">Express Develivery by Sat,Aug 30</span>
+                </div>
+            </div>
+            <div class="payment-details">
+                <span class="payment-method">Credit Card Payment</span>
+                <h3 class="order-price">Rs 1,899</h3>
+                <span class="arrow-icon">arrow-down</span>
+            </div>
+        </div>
+        <button class="delivered-btn">Delivered</button>
+        <hr class="card-end">
+        <div class="order-card-wrapper">
+            <div class="order-card-details">
+                <div class="order-image">
+                    <img src="" class="image-item">
+                </div>
+                <div class="order-paragraph">
+                    <span class="order-id">Order #12345678</span>
+                    <h3 class="order-item">Madeup White Cotton Blend Checkered Slim Fit Shirt</h3>
+                    <span class="order-delivery">Express Develivery by Sat,Aug 30</span>
+                </div>
+            </div>
+            <div class="payment-details">
+                <span class="payment-method">Credit Card Payment</span>
+                <h3 class="order-price">Rs 1,899</h3>
+                <span class="arrow-icon">arrow-down</span>
+            </div>
+        </div>
+        <button class="delivered-btn">Delivered</button>
+        <hr class="card-end"> -->
+    </div>
+
+
+</div>

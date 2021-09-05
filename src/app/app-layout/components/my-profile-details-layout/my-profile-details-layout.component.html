@@ -1,0 +1,76 @@
+<div class="user-selected-menu">
+    <p class="selected-menu-path">Home / My Profile</p>
+</div>
+<div class="profile-content-wrapper">
+    <div class="user-sidebar">
+        <div class="user-details-wrapper" *ngFor="let profile of userDetails">
+            <img [src]="profile.profilePic" class="user-img">
+            <div class="user-info">
+                <h3 class="user-name">
+                    {{profile.userName}}
+                </h3>
+                <h3 class="user-email">
+                    {{profile.userMail}}
+                </h3>
+            </div>
+        </div>
+        <div class="sidebar-items" *ngFor="let user of userMenuItems">
+           
+                <div class="menu-items-wrapper"  (click)="showMenuContent(user.path)">
+                    <div class="menu-item1 item">
+                        <h2 class="menu-header">
+                          {{user.menuHeader}}
+                        </h2>
+                        <p class="submenu">
+                          {{user.subMenu}}
+                        </p>
+                    </div>
+                    <a [routerLink]="user.path" class="menu-link" >
+                    <div class="menu-arrow">
+                        <i class="fa fa-chevron-right"></i>
+                    </div>
+                    </a>
+                </div>
+                <hr [class]="user.className" id="line">
+    
+                <!-- <div class="menu-items-wrapper">
+                    <div class="menu-item1 item">
+                        <h2 class="menu-header">
+                            My Orders
+                        </h2>
+                        <p class="submenu">
+                            Already have 12 orders
+                        </p>
+                    </div>
+                    <a [routerLink]="orders" class="menu-link">
+                    <div class="menu-arrow">
+                        arrow-symbol
+                    </div>
+                    </a>
+                </div>
+                <div class="menu-items-wrapper">
+                    <div class="menu-item1 item">
+                        <h2 class="menu-header">
+                            Shipping Addresses
+                        </h2>
+                        <p class="submenu">
+                            3 addresses
+                        </p>
+                    </div>
+                    <a href="#" class="menu-link">
+                    <div class="menu-arrow">
+                        arrow-symbol
+                    </div>
+                    </a>
+                </div> -->
+            
+        </div>
+    
+        
+        
+    </div>
+    <div class="menu-content">
+        <router-outlet></router-outlet>
+    </div>
+    
+</div>

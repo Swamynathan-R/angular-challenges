@@ -1,0 +1,261 @@
+.navigation{
+	width:100%;
+	height:5rem;
+	display: flex;
+	flex-direction: row;
+}
+
+.navigation-logo{
+	margin:0 4rem 0 6rem;
+    background-color: #f00;
+	color:#fff;
+	cursor: pointer;
+}
+
+.navigation-header{
+	padding: 0rem 0.5rem 2rem 0.5rem;
+}
+
+.navigation-list{
+	list-style: none;
+    display:flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-left:11rem;
+}
+
+.navigation-item{
+	width:6rem;
+	padding: 1rem;
+}
+
+.navigation-link{
+	text-decoration: none;
+	color:#000;
+	transition: color .2s;
+}
+
+.navigation-link:hover{
+	color:#f00;
+}
+
+.navigation-icons{
+	display: flex;
+    list-style: none;
+    align-items: center;
+	justify-content: flex-start;
+    /* margin-left: -1rem; */
+	width:0;
+}
+.active-item{
+	color: #f00;
+}
+
+.icon{
+	display: none;
+}
+
+
+
+
+
+
+
+@media (max-width:1600px){
+	.xs-screen-nav{
+		display: none;
+	}
+}
+
+@media(max-width:1024px){
+
+	.xs-screen-nav{display: none;}
+	.navigation-icons{
+		display: flex;
+		list-style: none;
+		align-items: center;
+		justify-content: flex-start;
+		width: 0;
+		margin-left: 0rem;
+	}
+	.navigation-list{
+		list-style: none;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-left: 0rem;
+	}
+}
+
+@media (max-width:768px){
+	.xs-screen-nav{display: none;}
+	.navigation-logo{
+		margin: 0 4rem 0 3rem;
+		background-color: #f00;
+		color: #fff;
+		cursor: pointer;
+	}
+	.navigation-item{
+		width: 4rem;
+		padding:1rem;
+	}
+	.navigation-list{
+		list-style: none;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-left: -7rem;
+	}
+	
+}
+
+
+
+@media (max-width:360px),(max-width:384px),(max-width:414px),(max-width:411px){
+	.navigation-list,.lg-screen,.xs-screen-nav{display: none;}
+	.xs-screen{
+	  float: right;
+	  /* display: flex; */
+	}
+	.icon{
+		display: block;
+	}
+	.navigation{
+		width: 100%;
+		height: 5rem;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	.navigation-logo{
+		background-color: #f00;
+		color: #fff;
+		cursor: pointer;
+		margin-left: -2rem;
+	}
+	.navigation-icons{
+		display: flex;
+		list-style: none;
+		align-items: center;
+		justify-content: center;
+		width: 0;
+		position: relative;
+		left: 1rem;
+	}
+	.side-nav-active .xs-screen-nav{
+		padding: 12rem 0rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		position: fixed;
+		top: 0;
+		right: -6rem;
+		height: 58vh;
+		width: 90vw;
+		background-color: #fff;
+		z-index: 1;
+	}
+	.side-nav-active .xs-screen-nav a{
+		padding: 1rem;
+		margin-left: -6rem;
+		font-size: 1.2rem;
+		color: grey;
+		text-decoration: none;
+	}
+	.side-nav-active .xs-screen-nav a:hover{
+		color: #f00;
+	}
+
+	.side-nav-active .navigation-logo{
+		background-color: #f00;
+		color: #fff;
+		cursor: pointer;
+		margin-left: 1rem;
+		width: 8rem;
+		height: 5rem;
+		margin-top: -2rem;
+	
+	}
+	.side-nav-active .navigation-header{
+		font-size: 1.5rem;
+		position: relative;
+		top: 2.1rem;
+		padding: 0rem 0.5rem;
+	}
+	.side-nav-active .xs-screen{
+		display: none;
+	}
+	.side-nav-active .close-icon{
+		position: relative;
+		bottom: 7rem;
+		font-size: 2.5rem;
+		left: 5rem;
+	}
+	.side-nav-active .section-break{
+		width: 17rem;
+		position: relative;
+		right: 3rem;
+		opacity: 0.3;
+	}
+}
+
+@media(max-width:320px){
+	.navigation-item{
+		width: 0rem;
+    	padding: 1rem;
+	}
+}
+
+@media (max-width:280px){
+	.xs-screen-nav{display: none;}
+	.navigation{
+		width: 100%;
+		height: 4rem;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	.navigation-icons{
+		display: flex;
+		list-style: none;
+		align-items: center;
+		justify-content: center;
+		width: 0;
+		position: relative;
+		left: -1rem;
+	}
+	.side-nav-active .xs-screen-nav{
+		padding: 12rem 0rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		position: fixed;
+		top: 0;
+		right: -6rem;
+		height: 61vh;
+		width: 90vw;
+		background-color: #fff;
+		z-index: 1;
+	}
+	.side-nav-active .section-break{
+		width: 12rem;
+		position: relative;
+		right: 3rem;
+		opacity: 0.3;
+	}
+	.side-nav-active .xs-screen-nav a{
+		padding: 1rem;
+		margin-left: -6rem;
+		font-size: 1rem;
+		color: grey;
+	}
+	.side-nav-active .close-icon{
+		position: relative;
+		bottom: 9rem;
+		font-size: 1.5rem;
+		left: 3rem;
+	}
+}
+

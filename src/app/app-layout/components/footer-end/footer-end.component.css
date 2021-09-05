@@ -1,0 +1,168 @@
+@import url(../../../../styles.css);
+
+
+.footer{
+	height:50vh;
+	background-color: grey;
+}
+
+.main-part{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.footer-nav-items{
+      display: flex;
+	  flex-direction: column;
+	  justify-content: space-between;
+}
+
+.footer-nav-item{
+	height:3rem;
+	list-style: none;
+	font-size: 1.2rem;
+	color:whitesmoke;
+}
+
+.logo-wrapper{
+    background-color: #f00;
+	color:#fff;
+}
+
+.footer-logo{
+	padding:1rem 0.5rem 3rem 0.5rem;
+	margin-top: 1rem;
+}
+
+.social-paragraph{
+	text-align: center;
+	font-size: 1.2rem;
+	color:whitesmoke;
+	height:2rem;
+}
+
+.social-medias{
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+    margin-left: -3.6rem;
+}
+
+.footer-address-wrapper{
+	padding: 2rem;
+}
+.footer-address-content{
+	color:whitesmoke;
+}
+
+.footer-address-heading{
+	color: white;
+}
+.footer-address{
+	letter-spacing: .1rem;
+	line-height: 1.5rem;
+}
+.footer-contact-wrapper{
+	color: whitesmoke;
+	margin-top:4rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+
+}
+
+.footer-email,.footer-phone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-mail,.footer-ph{
+     margin-left:1rem;
+}
+
+.footer-nav-link{
+   color: whitesmoke;
+   text-decoration: none;
+   transition: color .2s;   
+}
+
+
+.footer-nav-link:hover,.social-media-item:hover,.footer-email:hover,.footer-phone:hover{
+	color:#f00;
+
+}
+
+.social-media-item,.footer-email,.footer-phone{
+	cursor:pointer;
+}
+
+
+.item-link{
+   font-size: 1.5rem;
+}
+
+.social-media-item{
+	width: 2.5rem;
+	height: 2.5rem;
+	background-color: white;
+	border-radius: 1rem;
+}
+
+.media-icons{
+	padding: 0.6rem 0.6rem 0rem ;
+}
+
+
+
+@media(max-width:1024px),(max-height:1366px){
+	.footer{
+        height:24rem;
+    }
+}
+
+
+@media(max-width:360px),(max-width:384px),(max-width:414px),(max-width:411px){
+	.footer{
+		height: 92vh;
+		background-color: grey;
+	}
+	.main-part{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;	
+	}
+	.footer-address-wrapper{
+		padding: 0.8rem 0rem;
+		text-align: center;
+	}
+	.footer-nav-items{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-items: center;
+		margin-top: 3rem;
+		margin-left: -3rem;
+	}
+	.footer-contact-wrapper{
+		color: whitesmoke;
+		margin-top: 2rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.social-paragraph{
+		text-align: center;
+		font-size: 1.2rem;
+		color: whitesmoke;
+		height: 2rem;
+		margin-top: 3rem;
+	}
+}
+
+

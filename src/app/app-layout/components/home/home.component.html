@@ -1,0 +1,177 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Header section -->
+<header class="header">
+    <div class="banner">
+        <p class="banner-paragraph1">Clothes that <span class="text-red">respire</span></p>
+        <p class="banner-paragraph2">for men who <span class="text-red">aspire</span></p>
+        <button class="banner-button">BROWSE COLLECTIONS</button>
+    </div>
+</header>
+<!-- end of Header section -->
+
+<!-- Images Section -->
+<section class="display-dressitems">
+
+    <div class="dress-collection">
+        <div class="images-1">
+            <p class="collection-paragraph1"><span class="text-red">Summer</span> is here</p>
+            <p class="collection-paragraph2">so is our <span class="text-red">collection</span></p>
+        </div>
+        <div class="images-2">
+            <p class="collection-paragraph1"><span class="text-red">Wrinkle-free</span> T-shirts</p>
+        </div>
+        <div class="images-3">
+            <p class="collection-paragraph1"><span class="text-red">Strain-free</span> denim shirts</p>
+        </div>
+    </div>
+</section>
+
+<!-- End of images Section -->
+<section class="collections">
+    <h1 class="section-name">LATEST COLLECTIONS</h1>
+    <div class="latest-collections">    
+        <div class="collection-card" *ngFor="let collectiondata of collectionDetails">
+            <img [src]="collectiondata.image" class="image-1">
+            <div class="collection-detail">
+                <p class="collection-name">{{collectiondata.name}}</p>
+                <p class="collection-price text-red">{{collectiondata.price}}</p>
+            </div>
+        </div>
+        <!-- <div class="collection-card">
+            <img src="../../../../assets/images/collection-2.jpg" class="image-1">
+            <div class="collection-detail">
+                <p class="collection-name">Printed polo tshirt</p>
+                <p class="collection-price text-red">1,4999.00</p>
+            </div>
+        </div>
+        <div class="collection-card">
+            <img src="../../../../assets/images/collection-1.jpg" class="image-1">
+            <div class="collection-detail">
+                <p class="collection-name">Printed polo tshirt</p>
+                <p class="collection-price text-red">1,4999.00</p>
+            </div>
+        </div>
+        <div class="collection-card">
+            <img src="../../../../assets/images/collection-2.jpg" class="image-1">
+            <div class="collection-detail">
+                <p class="collection-name">Printed polo tshirt</p>
+                <p class="collection-price text-red">1,4999.00</p>
+            </div>
+        </div>
+        <div class="collection-card">
+            <img src="../../../../assets/images/collection-1.jpg" class="image-1">
+            <div class="collection-detail">
+                <p class="collection-name">Printed polo tshirt</p>
+                <p class="collection-price text-red">1,4999.00</p>
+            </div>
+        </div>
+        <div class="collection-card">
+            <img src="../../../../assets/images/collection-2.jpg" class="image-1">
+            <div class="collection-detail">
+                <p class="collection-name">Printed polo tshirt</p>
+                <p class="collection-price text-red">1,4999.00</p>
+            </div>
+        </div> -->
+    </div>
+</section>
+<!-- End of Collections Section -->
+
+<!-- Testimonials section -->
+<section class="testimonials-section">
+    <h1 class="section-name">TESTIMONIALS</h1>
+    <div class="testimonials-content">
+        <div class="testimonial-card-wrapper">
+            <div class="testimonial-card" *ngFor="let testimony of testimonialDetails">
+                <div class="testimonial-image-wrapper">
+                    <img [src]="testimony.image" class="testimonial-image">
+                </div>
+                <div class="testimonial-info">
+                    <div class="testimonial-content">
+                        <h3 class="testimonial-name testimonial-row">
+                            {{testimony.name}}
+                        </h3>
+                        <h3 class="testimonial-rating testimonial-row">
+                            <i class="fa fa-star star-gold"></i>
+                            <i class="fa fa-star star-gold"></i>
+                            <i class="fa fa-star star-gold"></i>
+                            <i class="fa fa-star star-gold"></i>
+                        </h3>
+                    </div>
+
+                    <p class="testimonial-paragraph">
+                        {{testimony.review}}
+                    </p>
+                </div>
+
+            </div>
+            <!-- <div class="testimonial-card">
+                <div class="testimonial-image-wrapper">
+                    <img src="../../../../assets/images/testimonial-2.jpg" class="testimonial-image">
+                </div>
+                <div class="testimonial-info">
+                    <div class="testimonial-content">
+                        <h3 class="testimonial-name testimonial-row">
+                            Vikas
+                        </h3>
+                        <h3 class="testimonial-rating testimonial-row">
+                            <i class="fa fa-star star-gold"></i>
+                            <i class="fa fa-star star-gold"></i>
+                            <i class="fa fa-star star-gold"></i>
+                        </h3>	
+                    </div>
+                    
+                    <p class="testiomonial-paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod magni voluptatibus cupiditate.
+                         Ipsum deleniti aliquid, voluptas, iure ab aut pariatur exercitationem doloribus molestias aspernatur at. Animi enim repellat ut maxime.
+                    </p>
+                </div>
+                
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-image-wrapper">
+                    <img src="../../../../assets/images/testimonial-3.jpg" class="testimonial-image">
+                </div>
+                <div class="testimonial-info">
+                    <div class="testimonial-content">
+                        <h3 class="testimonial-name">
+                            Vikas
+                        </h3>
+                        <h3 class="testimonial-rating">
+                           <i class="fa fa-star star-gold"></i>
+                           <i class="fa fa-star star-gold"></i>
+                           <i class="fa fa-star star-gold"></i>
+                        </h3>	
+                    </div>
+                    
+                    <p class="testiomonial-paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod magni voluptatibus cupiditate.
+                         Ipsum deleniti aliquid, voluptas, iure ab aut pariatur exercitationem doloribus molestias aspernatur at. Animi enim repellat ut maxime.
+                    </p>
+                </div>
+            </div>-->
+    </div>
+</div>
+
+</section>
+<!-- End of Testimonials section -->
+
+
+<!-- NewsLetter section -->
+<section class="newsletter-section">
+    <div class="newsletter">
+        <div class="newsletter-wrapper">
+            <div class="newsletter-heading">
+                <h1 class="news-header">GET COUPONS & STYLE GUIDES</h1>
+            </div>
+            <div class="newletter-paragraph">
+                <h4 class="news-paragraph">Subscribe to our Newsletter</h4>
+            </div>
+            <div class="newsletter-subscribe">
+                <div class="newsletter-content">
+                    <input type="text" placeholder="E-mail" class="email-box">
+                    <button class="subscribe-button">SUBSCRIBE</button>
+                </div>
+            </div>
+        </div>
+        <button class="locateus-btn"><i class="fa fa-map-marker location-icon"></i>LOCATE US</button>
+    </div>	
+</section>
+<!-- end of subsciption section -->

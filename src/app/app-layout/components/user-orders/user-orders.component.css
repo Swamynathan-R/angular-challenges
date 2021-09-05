@@ -1,0 +1,238 @@
+.container{
+    padding: 1rem;
+}
+
+
+.section-heading,.profile-details{
+    padding: 0rem 2rem;
+}
+
+.header{
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+
+
+.order-card-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+    padding: 1rem 0rem 0rem 0rem;
+}
+
+.order-card-details{
+    display: flex;
+    margin-right: 0rem;
+}
+
+
+.order-image,.order-paragraph,.payment-details{
+     padding: 0.5rem;
+}
+.order-price{
+    text-align: center;
+    padding-bottom: .2rem;
+}
+
+.order-paragraph{
+    width: 20rem;
+}
+
+.image-item{
+    width: 7rem;
+    height: 6rem;
+}
+
+.order-item,.order-price{
+    margin: 0.7rem auto;
+}
+
+.order-id,.order-delivery,.payment-method,.card-end{
+    color: #949494;
+}
+.pending-btn,.delivered-btn{
+    color: whitesmoke;
+    background: black;
+    outline: none;
+    border: none;
+    padding: 0.5rem;
+    width: 8rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    position: relative;
+    left: 48rem;
+    top: 0.6rem;
+}
+
+.delivered-btn{
+    background-color: rgba(173, 169, 169, 0.856);
+}
+
+.arrow-icon{
+    position: relative;
+    top: 3rem;
+    left: 6rem;
+}
+
+.down-arrow{
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:1024px){
+
+	.pending-btn,.delivered-btn{
+        color: whitesmoke;
+        background: black;
+        outline: none;
+        border: none;
+        padding: 0.5rem;
+        width: 8rem;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        position: relative;
+        left: 34.5rem;
+        top: 0.6rem;
+	}
+    
+}
+
+@media(max-width:768px){
+    .payment-details{
+        margin-left: -4rem;
+    }
+    .pending-btn,.delivered-btn{
+        color: whitesmoke;
+        background: black;
+        outline: none;
+        border: none;
+        padding: 0.5rem;
+        width: 8rem;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        position: relative;
+        left: 22.5rem;
+        top: 0.6rem;
+    }
+    .arrow-icon{
+        position: relative;
+        top: 1rem;
+        left: 3rem;
+    }
+}
+
+@media (max-width:360px),(max-width:384px),(max-width:414px),(max-width:411px){
+    .order-paragraph{
+        width: 15rem;
+    }
+    .order-price{
+        margin: 0rem;
+    }
+    .payment-details{
+        display: flex;
+        position: relative;
+        padding: 0rem;
+        left: -5rem;
+        top: 0.5rem;
+    }
+    .payment-method{
+        color: #949494;
+        width: 9rem;
+    }
+    .arrow-icon{
+        position: relative;
+        top: 3rem;
+        left: -3rem;
+    }
+    .pending-btn,.delivered-btn{
+        color: whitesmoke;
+        background: black;
+        outline: none;
+        border: none;
+        padding: 0.5rem;
+        width: 8rem;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        position: relative;
+        left: 20rem;
+        top: 0.5rem;
+    }
+}
+
+
+@media(max-width:320px){
+    .order-paragraph{
+        width:12rem;
+    }
+    .payment-details{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 11rem;
+        left: -17rem;
+    }
+    .down-arrow{
+        font-size: 1.5rem;
+        position: relative;
+        left: 24rem;
+        bottom: 10rem;
+    }
+    .pending-btn,.delivered-btn{
+        color: whitesmoke;
+        background: black;
+        outline: none;
+        border: none;
+        padding: 0.5rem;
+        width: 8rem;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        position: relative;
+        left: 17rem;
+        top: 0.5rem;
+    }
+    .payment-method{}
+    .arrow-icon{}
+}
+
+@media(max-width:280px){
+    .order-paragraph{
+        width:12rem;
+    }
+    .payment-details{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 11rem;
+        left: -16rem;
+    }
+    .down-arrow{
+        font-size: 1.5rem;
+        position: relative;
+        left: 20rem;
+        bottom: 9rem;
+    }
+    .pending-btn,.delivered-btn{
+        color: whitesmoke;
+        background: black;
+        outline: none;
+        border: none;
+        padding: 0.5rem;
+        width: 8rem;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        position: relative;
+        left: 12.5rem;
+        top: 0.6rem;
+    }
+    
+}
+
+

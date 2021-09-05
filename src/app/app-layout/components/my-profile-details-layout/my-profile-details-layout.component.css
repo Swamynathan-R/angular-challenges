@@ -1,0 +1,173 @@
+.user-selected-menu{
+    margin-left: 7rem;
+}
+
+
+.submenu,.user-selected-menu,.user-email{
+    color: #949494;
+}
+
+
+.user-sidebar{
+    width: 28rem;
+    margin-left: 7rem;
+}
+
+
+.user-details-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+
+.user-img{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 5rem;
+    margin: 2rem;
+}
+
+.user-info,.sidebar-items{
+    margin: 2rem;
+}
+
+.user-name{
+    font-weight: 200;
+    font-size: 1.5rem;
+    margin-bottom: -0.5rem;
+}
+
+.menu-link{
+    text-decoration: none;
+    color: black;
+}
+
+.menu-items-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.menu-header{
+    margin-bottom: -0.5rem;
+}
+
+.menu-arrow{
+    margin: 1.5rem 2rem;
+}
+
+.menu-content-section{
+    margin-left: 25rem;
+    background-color: black;
+}
+
+.profile-content-wrapper{
+    display: flex;
+    padding: 2rem;
+}
+
+.menu-content{
+    border: 1px solid black;
+    width: 50%;
+    margin-left: 0rem;
+}
+
+.active-menu{
+    display: none;
+}
+
+
+
+
+/* Responsive Design */
+
+@media(max-width:1600px){
+    .active-menu{
+        display: block;
+        width: 21.4vw;
+    }
+}
+
+
+
+@media (max-width:1024px){
+    .active-menu{
+        display: none;
+    }
+    .user-sidebar{
+        width: 28rem;
+        margin-left: 4rem;
+    }
+    .menu-content{
+        border: 1px solid black;
+        width: 50%;
+        margin-left: 2rem;
+    }
+    .profile-content-wrapper{
+        display: flex;
+        padding: 1rem;
+    }
+
+}
+
+
+@media(max-width:360px),(max-width:384px),(max-width:414px),(max-width:411px){
+    .active-menu{
+        display: none;
+    }
+    
+    .profile-content-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .user-sidebar{
+        width: 30rem;
+        margin-left: 0rem;
+    }
+    .user-selected-menu{
+        display: none;
+    }
+    .menu-content{
+        width: 30rem;
+        margin-left: 0rem;
+    }
+    
+}
+
+@media(max-width:320px){
+    .menu-content{
+        width: 27rem;
+        margin-left: 0rem;
+    }
+    .active-menu{
+        display: none;
+    }
+    
+}
+
+
+@media(max-width:280px){
+    .menu-content{
+        width: 22rem;
+        margin-left: 0rem;
+    }
+    .user-sidebar{
+        width: 21rem;
+    }
+    .active-menu{
+        display: none;
+    }
+    
+}
+
+
+
+
+
+
+
+
