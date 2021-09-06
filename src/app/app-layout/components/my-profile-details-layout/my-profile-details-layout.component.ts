@@ -27,7 +27,9 @@ export class MyProfileDetailsLayoutComponent implements OnInit {
         "menuHeader": "My Profile",
         "subMenu": "Notification,password",
         "path":this.myProfile,
-        "className":'active-menu'
+        "className":'active-menu',
+        "componentStart":"<app-profile-form>",
+        "componentEnd":"</app-profile-form>",
       },
       {
         "menuHeader": "My Orders",

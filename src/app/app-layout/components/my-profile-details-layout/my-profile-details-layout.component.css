@@ -74,8 +74,9 @@
     margin-left: 0rem;
 }
 
-.active-menu{
-    display: none;
+
+.down-arrow{
+ display: none;   
 }
 
 
@@ -114,7 +115,10 @@
 
 
 @media(max-width:360px),(max-width:384px),(max-width:414px),(max-width:411px){
-    .active-menu{
+    .down-arrow{
+        display:block ;
+    }
+    .fa-chevron-right{
         display: none;
     }
     
@@ -139,6 +143,12 @@
 }
 
 @media(max-width:320px){
+    .down-arrow{
+        display:block ;
+    }
+    .fa-chevron-right{
+        display: none;
+    }
     .menu-content{
         width: 27rem;
         margin-left: 0rem;
@@ -151,6 +161,12 @@
 
 
 @media(max-width:280px){
+    .down-arrow{
+        display:block ;
+    }
+    .fa-chevron-right{
+        display: none;
+    }
     .menu-content{
         width: 22rem;
         margin-left: 0rem;
