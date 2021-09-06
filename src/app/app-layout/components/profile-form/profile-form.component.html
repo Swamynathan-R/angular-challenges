@@ -26,7 +26,10 @@
                 <input type="text" class="item-6 item" placeholder="Confirm Password" formControlName="confirmPassword">
             </div>
         </div>
-        <span class="btn-error-msg" *ngIf="showError">Please Fill Required Details</span>
+        <span class="btn-error-msg" *ngIf="showError;else showsuccess">Please Fill Required Details</span>
+        <ng-template #showsuccess>
+            <span class="btn-success-msg">Added Successfully</span>
+        </ng-template>
         <div class="address">
             <button class="address-btn"  (click)="addAddress()">ADD NEW ADDRESS</button>
         </div>

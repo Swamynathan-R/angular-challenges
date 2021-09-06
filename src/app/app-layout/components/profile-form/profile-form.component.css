@@ -60,6 +60,10 @@
     color: red;
 }
 
+.btn-success-msg{
+    color:green;
+}
+
 
 
 
@@ -141,6 +145,12 @@
 
     .btn-error-msg{
         color: red;
+        position: relative;
+        padding: 1.5rem;
+        left: 6rem;
+    }
+    .btn-success-msg{
+        color: green;
         position: relative;
         padding: 1.5rem;
         left: 6rem;
