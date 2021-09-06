@@ -4,7 +4,7 @@
 <div class="profile-content-wrapper">
     <div class="user-sidebar">
         <div class="user-details-wrapper" *ngFor="let profile of userDetails">
-            <img [src]="profile.profilePic" class="user-img">
+            <img [src]="profile.profilePic" alt="profile" class="user-img">
             <div class="user-info">
                 <h3 class="user-name">
                     {{profile.userName}}

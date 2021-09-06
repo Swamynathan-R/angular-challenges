@@ -6,7 +6,7 @@
 	background:url('../../../../assets/images/banner.png') no-repeat ;
 	/* background-color: grey; */
 	background-size: cover;
-	/* opacity: 0.9; */
+	opacity: 0.8;
 }
 
 .banner{
@@ -73,7 +73,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	opacity: 0.9;
+	opacity: 0.8;
 }
 .images-2{
 	background:url('../../../../assets/images/wrikle-free.jpg') no-repeat center ;
@@ -82,7 +82,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	opacity: 0.9;
+	opacity: 0.8;
 }
 .images-3{
 	background:url('../../../../assets/images/denim-2.jpg') no-repeat center ;
@@ -91,7 +91,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	opacity: 0.9;
+	opacity: 0.8;
 }
 
 
@@ -214,6 +214,7 @@
 .newsletter{
 	background: url('../../../../assets/images/newletter.png') no-repeat center;
 	background-size: cover;
+	opacity: 0.8;
 }
 
 
@@ -375,7 +376,7 @@
 	}
 }
 
-@media (max-width:375px),(max-width:360px),(max-width:384px),(max-width:414px),(max-width:411px){
+@media(max-width:414px){
 	.banner{
 		color: #000;
 		height: 59rem;
@@ -459,12 +460,153 @@
 	.news-header{
 		font-size: 1.2rem;
 		font-weight: 300;
+		color:black;
 		letter-spacing: .1rem;
 	}
 	.news-paragraph{
-		font-size: 0.8rem;
+		font-size: 1rem;
 		font-weight: 300;
 		letter-spacing: .1rem;
+		color:black;
+	}
+	.email-box,.subscribe-button{
+		width: 19rem;
+		height: 2.4rem;
+		margin-right: 0rem;
+		border: none;
+		margin: 1rem;
+	}
+	.newsletter-content{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;	
+	}
+	.locateus-btn{
+		color: white;
+		background-color: rgb(37, 37, 37);
+		outline: none;
+		width: 11rem;
+		height: 2.5rem;
+		border: none;
+		position: relative;
+		left: 10rem;
+		bottom: 0.2rem;
+	}
+
+
+}
+
+@media(max-width:411px){
+	.newsletter-section{
+		height: 23vh;
+	}
+	.locateus-btn{
+		color: white;
+		background-color: rgb(37, 37, 37);
+		outline: none;
+		width: 11rem;
+		height: 2.5rem;
+		border: none;
+		position: relative;
+		left: 13rem;
+		bottom: 0rem;
+	}
+}
+
+
+@media (max-width:375px),(max-width:360px),(max-width:384px){
+	.banner{
+		color: #000;
+		height: 59rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.header{
+		height: 100vh;
+		background: url('../../../../assets/images/banner.png') no-repeat center;
+		background-size: cover;
+	}
+	.dress-collection{
+		display: flex;
+		flex-direction: column;
+		/* grid-template-columns: auto auto; */
+		/* grid-gap: 0.5rem; */
+		height: 108vh;
+		/* padding: 0.5rem; */
+		background-color: whitesmoke;
+	}
+
+	.images-1{
+		background: url('../../../../assets/images/denim.jpg') no-repeat;
+		background-size: contain;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		opacity: 0.9;
+		height: 38rem;
+	}
+	.images-2{
+		background: url('../../../../assets/images/wrikle-free.jpg') no-repeat center;
+		background-size: cover;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		opacity: 0.9;
+		height: 25rem;
+	}
+	.images-3{
+		background: url('../../../../assets/images/denim-2.jpg') no-repeat center;
+		background-size: cover;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		opacity: 0.9;
+		height: 25rem ;	
+	}
+	.testimonials-content{
+		margin-top: 0rem;
+		margin-left: 2rem;
+	}
+	.testimonial-card{
+		width: 25rem;
+		display: flex;
+		box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+		margin-top: 1rem;	
+	}
+	.testimonials-section{
+		height: 91vh;
+		background-color: whitesmoke;
+	}
+	.newsletter-section{
+		height: 26vh;
+	}
+	.newsletter{
+		background: url('../../../../assets/images/newletter.png') no-repeat center;
+    	background-size: cover;
+	}
+	.newsletter-wrapper{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.news-header{
+		font-size: 1.2rem;
+		font-weight: 300;
+		color:black;
+		letter-spacing: .1rem;
+	}
+	.news-paragraph{
+		font-size: 1rem;
+		font-weight: 300;
+		letter-spacing: .1rem;
+		color:black;
 	}
 	.email-box,.subscribe-button{
 		width: 19rem;
@@ -492,25 +634,28 @@
 	}
 }
 
+
+
 @media (max-width:320px){
 	.image-1{
 		width: 10rem;
 		height: 20rem;	
 	}
 	.testimonials-section{
-		height: 103vh;
-    	background-color: whitesmoke;
+		height: 109vh;
+		background-color: whitesmoke;	
 	}
 	.locateus-btn{
 		color: white;
+		padding: 0;
 		background-color: rgb(37, 37, 37);
 		outline: none;
-		width: 11rem;
-		height: 2.8rem;
+		width: 10rem;
+		height: 2rem;
 		border: none;
 		position: relative;
 		left: 9rem;
-		bottom: 2.2rem;
+		bottom: 0rem;
 	}
 }
 

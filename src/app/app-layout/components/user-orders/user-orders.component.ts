@@ -14,7 +14,7 @@ export class UserOrdersComponent implements OnInit {
     this.orderDetails=[
       {
         "orderId":"#123456789",
-        "orderItemImg":"../../../../assets/images/collection-2.jpg",
+        "orderItemImg":"assets/images/collection-2.jpg",
          "orderedItemName":"Madeup White Cotton Blend Checkered Slim Fit Shirt",
         "deliveredDate":"Express Delivery by Sat,Sep 10",
         "paymentMethod":"Debit Card Payment",
@@ -24,7 +24,7 @@ export class UserOrdersComponent implements OnInit {
       },
       {
         "orderId":"#871681754",
-        "orderItemImg":"../../../../assets/images/collection-1.jpg",
+        "orderItemImg":"assets/images/collection-1.jpg",
          "orderedItemName":"Madeup White Cotton Blend Checkered Slim Fit Denim",
         "deliveredDate":"Express Delivery by Mon,Julys 20",
         "paymentMethod":"Cash on delivery",
@@ -34,7 +34,7 @@ export class UserOrdersComponent implements OnInit {
       },
       {
         "orderId":"#275127891",
-        "orderItemImg":"../../../../assets/images/collection-2.jpg",
+        "orderItemImg":"assets/images/collection-2.jpg",
          "orderedItemName":"Madeup White Cotton Blend Checkered Slim Fit Shirt",
         "deliveredDate":"Express Delivery by Sat,April 30",
         "paymentMethod":"Debit Card Payment",
@@ -44,7 +44,7 @@ export class UserOrdersComponent implements OnInit {
       },
       {
         "orderId":"#123461242",
-        "orderItemImg":"../../../../assets/images/collection-1.jpg",
+        "orderItemImg":"assets/images/collection-1.jpg",
         "orderedItemName":"Madeup blue Jeans Slim Fit Pant",
         "deliveredDate":"Express Delivery by Fri,March 30",
         "paymentMethod":"Cash on delivery",

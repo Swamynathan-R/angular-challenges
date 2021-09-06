@@ -44,7 +44,7 @@ export class MyProfileDetailsLayoutComponent implements OnInit {
     let userInfo={
       "userName":"Grishk",
       "userMail":"griishkaim@gmail.com",
-      "profilePic":"../../../../assets/images/profile-pic.jpg"
+      "profilePic":"assets/images/profile-pic.jpg"
     }
     this.userDetails.push(userInfo);
     console.log(this.userMenuItems);

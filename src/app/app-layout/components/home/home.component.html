@@ -31,7 +31,7 @@
     <h1 class="section-name">LATEST COLLECTIONS</h1>
     <div class="latest-collections">    
         <div class="collection-card" *ngFor="let collectiondata of collectionDetails">
-            <img [src]="collectiondata.image" class="image-1">
+            <img [src]="collectiondata.image" alt='collection' class="image-1">
             <div class="collection-detail">
                 <p class="collection-name">{{collectiondata.name}}</p>
                 <p class="collection-price text-red">{{collectiondata.price}}</p>
@@ -83,7 +83,7 @@
         <div class="testimonial-card-wrapper">
             <div class="testimonial-card" *ngFor="let testimony of testimonialDetails">
                 <div class="testimonial-image-wrapper">
-                    <img [src]="testimony.image" class="testimonial-image">
+                    <img [src]="testimony.image" alt="client"  class="testimonial-image">
                 </div>
                 <div class="testimonial-info">
                     <div class="testimonial-content">
@@ -149,7 +149,6 @@
             </div>-->
     </div>
 </div>
-
 </section>
 <!-- End of Testimonials section -->
 

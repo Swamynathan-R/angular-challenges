@@ -165,4 +165,19 @@
 	}
 }
 
+@media(max-width:320px){
+	.footer{
+		height: 118vh;
+    	background-color: grey;
+	}
+	.footer-nav-items{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-items: center;
+		margin-top: 6rem;
+		margin-left: -3rem;
+	}
+}
+
 

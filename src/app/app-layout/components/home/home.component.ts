@@ -16,19 +16,19 @@ export class HomeComponent implements OnInit {
     this.testimonialDetails=[
       {
         "name":"Jose",
-        "image":"../../../../assets/images/testimonial-1.jpg",
+        "image":"assets/images/testimonial-1.jpg",
         "review":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod magni voluptatibus cupiditate Ipsum deleniti aliquid, voluptas, iure ab aut pariatur exercitationem doloribus molestias aspernatur at. Animi enim repellat ut maxime.",
         "rating":5
       },
       {
         "name":"Aaron",
-        "image":"../../../../assets/images/testimonial-2.jpg",
+        "image":"assets/images/testimonial-2.jpg",
         "review":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod magni voluptatibus cupiditate Ipsum deleniti aliquid, voluptas, iure ab aut pariatur exercitationem doloribus molestias aspernatur at. Animi enim repellat ut maxime.",
         "rating":4
       },
       {
         "name":"Alex",
-        "image":"../../../../assets/images/testimonial-3.jpg",
+        "image":"assets/images/testimonial-3.jpg",
         "review":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod magni voluptatibus cupiditate Ipsum deleniti aliquid, voluptas, iure ab aut pariatur exercitationem doloribus molestias aspernatur at. Animi enim repellat ut maxime.",
         "rating":3
       },
@@ -42,7 +42,7 @@ export class HomeComponent implements OnInit {
       // },
       {
         "name":"Printed Denim Shirts",
-        "image":"../../../../assets/images/collection-2.jpg",
+        "image":"assets/images/collection-2.jpg",
         "price":"1,500.00"
       },
       // {
@@ -52,7 +52,7 @@ export class HomeComponent implements OnInit {
       // },
       {
         "name":"Printed Denim Shirts",
-        "image":"../../../../assets/images/collection-2.jpg",
+        "image":"assets/images/collection-1.jpg",
         "price":"1,500.00"
       },
       // {
