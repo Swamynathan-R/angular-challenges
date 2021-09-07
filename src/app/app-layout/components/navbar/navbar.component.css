@@ -61,7 +61,7 @@
 
 
 
-@media (max-width:1600px){
+@media (max-width:1920px),(max-width:1600px){
 	.xs-screen-nav{
 		display: none;
 	}
